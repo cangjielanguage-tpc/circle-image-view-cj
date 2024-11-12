@@ -1,33 +1,44 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2024-2024. All rights reserved.
+ */
+
 package ohos_app_cangjie_entry
 
-internal import ohos.base.LengthProp
-internal import ohos.component.Column
-internal import ohos.component.Row
-internal import ohos.component.Button
-internal import ohos.component.Text
-internal import ohos.component.CustomView
-internal import ohos.component.CJEntry
-internal import ohos.component.loadNativeView
-internal import ohos.state_manage.SubscriberManager
-internal import ohos.state_manage.ObservedProperty
-internal import ohos.state_manage.LocalStorage
-import ohos.state_macro_manage.Entry
-import ohos.state_macro_manage.Component
-import ohos.state_macro_manage.State
-import ohos.state_macro_manage.r
+import ohos.base.*
+import ohos.component.*
+import ohos.state_manage.*
+import ohos.state_macro_manage.*
+import circleImageView.*
 
 @Entry
 @Component
 class EntryView {
     @State
-    var message: String = "Hello Cangjie"
+    var data: CircleImageModel = CircleImageModel()
+
+    protected override func aboutToAppear() {
+        this.data = this.data.setImageURI(@r(app.media.hua))
+        .setDiameter(200.0)
+        .setBorderWidth(5.0)
+        .setBorderColor(Color.WHITE)
+        .setScaleType(ImageFit.Fill)
+        .setDisableCircularTransformation(false)
+    }
     func build() {
-        Row {
-            Column {
-                Button(message).onClick {
-                    evt => AppLog.info("Hello Cangjie")
-                }.fontSize(40).height(80)
-            }.width(100.percent)
-        }.height(100.percent)
+        Column() {
+            List(space: 0, initialIndex: 0) {
+                ListItem() {
+                    Column(5) {
+                        CircleImageView(model: data)
+                    }.align(Alignment.Center).width(200).height(200)
+                }.height(50.percent).width(100.percent)
+
+                ListItem() {
+                    Column(5) {
+                        CircleImageView(model: data)
+                    }.align(Alignment.Center)
+                }.height(50.percent).backgroundColor(0x000000).width(100.percent)
+            }.width(100.percent).margin(top: 5)
+        }
     }
 }
