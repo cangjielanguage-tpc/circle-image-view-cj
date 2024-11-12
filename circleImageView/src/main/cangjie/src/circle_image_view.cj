@@ -64,7 +64,12 @@ public class CircleImageModel {
     }
 
     public func setDiameter(diameter: Float64): CircleImageModel {
-        this.diameter = diameter
+        if(diameter < 0.0) {
+            this.diameter = 0.0
+        } else {
+            this.diameter = diameter
+        }
+
         return this
     }
 
@@ -104,7 +109,12 @@ public class CircleImageModel {
     }
 
     public func setBorderWidth(borderWidth: Float64): CircleImageModel {
-        this.borderWidth = borderWidth
+        if(borderWidth < 0.0) {
+            this.borderWidth = 0.0
+        } else {
+            this.borderWidth = borderWidth
+        }
+
         return this
     }
 

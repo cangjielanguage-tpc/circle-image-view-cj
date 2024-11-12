@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "CircleImageView",
+        "License": "Apache-2.0 License",
+        "License File": " LICENSE.txt",
+        "Version Number": "v3.1.0",
+        "Owner" : "xiafeng@huawei.com"
+        "Upstream URL": "https://github.com/hdodenhof/CircleImageView",
+        "Description": "A fast circular ImageView perfect for profile images. This is based on RoundedImageView from Vince Mi which itself is based on techniques recommended by Romain Guy."
+    }
+]
