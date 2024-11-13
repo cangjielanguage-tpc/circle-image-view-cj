@@ -14,7 +14,7 @@
       [target.x86_64-unknown-windows-gnu.bin-dependencies.package-option]
 
 [dependencies]
-  [dependencies.cj_res_circleImageView]
+  [dependencies.cj_res_circleimageview]
     path = "./cj_res"
     version = "1.0.0"
 
@@ -23,7 +23,7 @@
   compile-option = ""
   description = "CangjieUI Application"
   link-option = ""
-  name = "circleImageView"
+  name = "circleimageview"
   output-type = "dynamic"
   src-dir = "src"
   target-dir = ""

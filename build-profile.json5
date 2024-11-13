@@ -38,8 +38,8 @@
       ]
     },
     {
-      "name": "circleImageView",
-      "srcPath": "./circleImageView"
+      "name": "circleimageview",
+      "srcPath": "./circleimageview"
     }
   ]
 }

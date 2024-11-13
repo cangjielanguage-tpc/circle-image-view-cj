@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "circleImageView",
+    "name": "circleimageview",
     "type": "har",
     "deviceTypes": [
       "default"
