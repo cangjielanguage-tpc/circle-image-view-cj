@@ -29,7 +29,7 @@ circleImageView4cj 是一个图片处理的库，可以将图片裁剪为圆形�
 ├─AppScope
 ├─doc        # API文档和使用手册存放目录                   
 ├─entry      # 示例代码文件夹                  
-├─circleImageView    # circleImageView 库文件夹                   
+├─circleimageview    # circleimageview 库文件夹                   
 │  └─src
 │      └─main
 │          ├─cangjie
@@ -48,7 +48,7 @@ circleImageView4cj 是一个图片处理的库，可以将图片裁剪为圆形�
 1. 通过 module 引入
     1. 克隆下载项目
     2. 将 circleImageView4cj 模块拷贝到应用项目下
-    3. 修改自身应用 entry 下的 oh-package.json5 文件，在 dependencies 字段添加 "circleImageView": "file:../circleImageView"
+    3. 修改自身应用 entry 下的 oh-package.json5 文件，在 dependencies 字段添加 "circleimageview": "file:../circleimageview"
       ```json
       {
          "name": "entry",
@@ -58,18 +58,18 @@ circleImageView4cj 是一个图片处理的库，可以将图片裁剪为圆形�
          "author": "",
          "license": "",
         "dependencies": {
-            "markdown": "file:../circleImageView"
+            "circleimageview": "file:../circleimageview"
         }
       }
       ```
-    4. 修改自身应用 entry/src/main/cangjie 下的 cjpm.toml 文件，在 [dependencies] 字段下添加 circleImageView = {path = "../../../../circleImageView/src/main/cangjie", version = "1.0.0"}
+    4. 修改自身应用 entry/src/main/cangjie 下的 cjpm.toml 文件，在 [dependencies] 字段下添加 circleimageview = {path = "../../../../circleimageview/src/main/cangjie", version = "1.0.0"}
        ```toml
        [dependencies]
-           circleImageView = {path = "../../../../circleImageView/src/main/cangjie", version = "1.0.0"}
+           circleimageview = {path = "../../../../circleimageview/src/main/cangjie", version = "1.0.0"}
        ```
-    5. 在项目中使用 import circleImageView.* 引用 circleImageView 项目
+    5. 在项目中使用 import circleimageview.* 引用 circleimageview 项目
        ```cangjie
-       import circleImageView.*
+       import circleimageview.*
        ```
 2. 把 circleImageView4cj 作为三方库依赖引入
     1. 目标工程把 circleImageView4cj 依赖库作为 git submodule 引入
@@ -83,11 +83,11 @@ circleImageView4cj 是一个图片处理的库，可以将图片裁剪为圆形�
     2. 修改自身应用 entry/src/main/cangjie 下的 cjpm.toml 文件，添加依赖
     ```toml
     [dependencies]
-        circleImageView = {path = "../../../../third-party/circleImageView4cj/circleImageView/src/main/cangjie", version = "1.0.0"}
+        circleimageview = {path = "../../../../third-party/circleImageView4cj/circleimageview/src/main/cangjie", version = "1.0.0"}
      ```
-    3. 在项目中使用 circleImageView 组件
+    3. 在项目中使用 circleimageview 组件
        ```cangjie
-       import circleImageView.*
+       import circleimageview.*
        ```
 
 ## 功能示例
@@ -99,7 +99,7 @@ import ohos.base.*
 import ohos.component.*
 import ohos.state_manage.*
 import ohos.state_macro_manage.*
-import circleImageView.*
+import circleimageview.*
 
 @Entry
 @Component

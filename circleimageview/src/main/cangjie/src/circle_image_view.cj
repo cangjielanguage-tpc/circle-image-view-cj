@@ -2,7 +2,7 @@
  * Copyright (c) Huawei Technologies Co., Ltd. 2024-2024. All rights reserved.
  */
 
-package circleImageView
+package circleimageview
 
 import ohos.base.*
 import ohos.component.*
