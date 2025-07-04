@@ -1,3 +1,8 @@
+## v1.0.1
+升级适配
+- DevEco Studio 5.1.0.828SP1
+- Cangjie Support Plugin 5.1.0.828
+
 ## 1.0.0
 升级适配
 - DevEco Studio 5.0.13.200
