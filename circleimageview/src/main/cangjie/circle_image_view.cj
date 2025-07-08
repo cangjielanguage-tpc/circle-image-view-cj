@@ -8,6 +8,7 @@ import ohos.base.*
 import ohos.component.*
 import ohos.state_manage.*
 import ohos.state_macro_manage.*
+import ohos.resource_manager.AppResource
 
 @Component
 public class CircleImageView {
@@ -44,7 +45,7 @@ public class CircleImageView {
 }
 
 public class CircleImageModel {
-    var src: CJResource = CJResource(0, 0, "")
+    var src: AppResource = AppResource("","",0)
     var diameter: Float64 = 0.0
     var scaleType: ImageFit = ImageFit.Contain
     var disableCircularTransformation: Bool = true
@@ -54,12 +55,12 @@ public class CircleImageModel {
     var borderColor: Color = Color.GRAY
     var isCircle: Bool = true
 
-    public func setImageURI(src: CJResource): CircleImageModel {
+    public func setImageURI(src: AppResource): CircleImageModel {
         this.src = src
         return this
     }
 
-    public func getImageURI(): CJResource {
+    public func getImageURI(): AppResource {
         return this.src
     }
 
