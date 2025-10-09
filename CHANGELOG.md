@@ -1,3 +1,7 @@
+## v1.0.2
+升级适配
+- DevEco Studio 5.1.1 Release(5.1.1.840)
+
 ## v1.0.1
 升级适配
 - DevEco Studio 5.1.0.828SP1

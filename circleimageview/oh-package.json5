@@ -1,6 +1,6 @@
 {
   "name": "@cangjie-tpc/circleimageview",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "circleImageView4cj 是一个图片处理的库，可以将图片裁剪为圆形或者给图片设置边框。",
   "main": "",
   "author": "cangjie-tpc",

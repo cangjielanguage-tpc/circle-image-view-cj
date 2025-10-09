@@ -18,7 +18,7 @@
     path = "../circleimageview"
 
 [package]
-  cjc-version = "1.0.0"
+  cjc-version = "1.0.2"
   compile-option = "--dy-std --cfg=\"${COMPILE_CONDITION_ENTRY}\""
   description = "CangjieUI Application"
   link-option = ""
@@ -26,7 +26,7 @@
   output-type = "dynamic"
   src-dir = "./src/main/cangjie"
   target-dir = ""
-  version = "1.0.1"
+  version = "1.0.3"
   [package.package-configuration]
   [package.scripts]
 
