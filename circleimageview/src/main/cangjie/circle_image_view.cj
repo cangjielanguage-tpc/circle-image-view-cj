@@ -36,12 +36,19 @@ public class CircleImageView {
 
             }.width(this.model.diameter + this.model.borderWidth)
             .height((this.model.diameter + this.model.borderWidth))
-            .borderRadius(((this.model.diameter + this.model.borderWidth) / 2.0))
+            .borderRadius(radiusValue((this.model.diameter + this.model.borderWidth) / 2.0))
             .justifyContent(FlexAlign.Center)
             .backgroundColor(this.model.borderColor)
         }
     }
 
+    private func radiusValue(value: Float64): Float64 {
+        if (this.model.disableCircularTransformation) {
+        	return 0.0
+        } else {
+        	return value
+        }
+    }
 }
 
 public class CircleImageModel {
