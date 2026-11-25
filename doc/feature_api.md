@@ -31,7 +31,7 @@ public class CircleImageModel {
      * 参数 src - 图片地址，参考 cangjieUI API 
      * 返回值 CircleImageModel - 图片裁剪数据实例  
      */
-    public func setImageURI(src: CJResource): CircleImageModel 
+    public func setImageURI(src: AppResource): CircleImageModel 
     
     /*
      * 设置图片缩放类型，默认 ImageFit.Contain。
@@ -99,7 +99,7 @@ public class CircleImageModel {
      *
      * 返回值 CJResource - 图片地址
      */
-    public func getImageURI(): CJResource 
+    public func getImageURI(): AppResource 
     
     /*
      * 获取图片缩放类型。

@@ -49,6 +49,7 @@ public class CircleImageView {
         	return value
         }
     }
+
 }
 
 public class CircleImageModel {
